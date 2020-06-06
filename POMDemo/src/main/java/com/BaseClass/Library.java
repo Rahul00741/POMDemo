@@ -24,13 +24,13 @@ public class Library {
 	public void launchApp() throws IOException 
 	{
 		
-		FileInputStream fileIS = new FileInputStream("C:\\Users\\Hp\\eclipse-workspace\\POMDemo\\src\\test\\resources\\Config Properties\\config.properties"); // configuration property path should be here
+		FileInputStream fileIS = new FileInputStream("C:\\Users\\user1\\git\\POMDemo\\POMDemo\\src\\test\\resources\\Config Properties\\config.properties"); // configuration property path should be here
 		prop = new Properties();
 		prop.load(fileIS);
 		
 		if(prop.getProperty("browser").equalsIgnoreCase("chrome")) 
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Hp\\eclipse-workspace\\POMDemo\\src\\test\\resources\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\user1\\git\\POMDemo\\POMDemo\\src\\test\\resources\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		
@@ -40,7 +40,8 @@ public class Library {
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 		
 	}
