@@ -15,6 +15,7 @@ import com.Pages.OrangeHRM_Leave_EmpoyeeEntitlements;
 import com.Pages.OrangeHRM_Login_Page;
 
 public class OrangeHRM_Leave_EmployeeEntitlement_TestCase2 extends Library{
+
 	
 	OrangeHRM_Login_Page login;
 	 OrangeHRM_Leave_EmpoyeeEntitlements empentitlement;
