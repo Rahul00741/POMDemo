@@ -12,7 +12,6 @@ public class OrangeHRM_Leave_Entitlements_EmpoyeeEntitlements {
 	 * @author Rahul
 	 * @version 1.0
 	 */
-
 	
 		WebDriver driver;
 		
