@@ -54,43 +54,53 @@ public class OrangeHRM_Leave_AddEntitlement {
 			select.selectByVisibleText(value);
 		}
 		
+		//click on Leave Tab in Application 
 		public void Leave_leavelink(){
 			LeaveLink.click();
 		}
 		
+		//click on Leave >> Entitlements 
 		public void Leave_Entitlements(){
 			Entitlements.click();;
 		}
 		
+		//click on Leave >> Entitlements >> Add Entitlements
 		public void Leave_AddEntitlements(){
 			AddEntitlements.click();
 		}
 		
+		// To add multiple employee select checkbox 
 		public void Leave_AddMultipleEmp(){
 			AddMultipleEmp.click();
 		}
 		
-			
+		//Enter the Location
 		public void Leave_DropLocation(String text){
 			selectdrop(Location, text);
 		}
 		
+		//Select the Sub Unit
 		public void Leave_DropSubUnit(String text){
 			selectdrop(SubUnit, text);
 		}
 		
+		
+		//Select Leave Type
 		public void Leave_DropLeavetype(String text){
 			selectdrop(Leavetype, text);
 		}
 		
+		// Select the Leave Period 
 		public void Leave_DropLeaveperiod(String value){
 			selectdrop(Leaveperiod, value);
 		}
 		
+		//Enter the Entitlement 
 		public void Leave_Entitlement(String entitlement) {
 			Entitlement.sendKeys(entitlement);
 		}
 		
+		//Click on Save Button 
 		public void Leave_Savebutton(){
 			Savebutton.click();
 		}

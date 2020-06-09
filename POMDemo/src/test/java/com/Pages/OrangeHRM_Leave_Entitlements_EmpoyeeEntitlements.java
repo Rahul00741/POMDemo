@@ -10,7 +10,7 @@ public class OrangeHRM_Leave_Entitlements_EmpoyeeEntitlements {
 	
 	/**
 	 * @author Rahul
-	 * @version 1.0
+	 * 
 	 */
 	
 		WebDriver driver;
@@ -47,6 +47,7 @@ public class OrangeHRM_Leave_Entitlements_EmpoyeeEntitlements {
 			Select select=new Select(element);
 			select.selectByVisibleText(value);
 		}
+		
 		
 		//click on Leave Tab in Application 
 		public void Leave_leavelink(){

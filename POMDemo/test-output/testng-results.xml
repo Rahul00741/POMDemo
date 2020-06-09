@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65303" started-at="2020-06-05T14:44:59Z" finished-at="2020-06-05T14:46:05Z">
+  <suite name="Default suite" duration-ms="40314" started-at="2020-06-08T13:06:33Z" finished-at="2020-06-08T13:07:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65303" started-at="2020-06-05T14:44:59Z" finished-at="2020-06-05T14:46:05Z">
-      <class name="com.TestCases.OrangeHRM_Leave_EmployeeEntitlement_TestCase2">
-        <test-method status="PASS" signature="Start()[pri:0, instance:com.TestCases.OrangeHRM_Leave_EmployeeEntitlement_TestCase2@1ba5a14]" name="Start" is-config="true" duration-ms="23909" started-at="2020-06-05T20:15:00Z" finished-at="2020-06-05T20:15:23Z">
+    <test name="Default test" duration-ms="40314" started-at="2020-06-08T13:06:33Z" finished-at="2020-06-08T13:07:13Z">
+      <class name="com.TestCases.OrangeHRM_Leave_AssignLeave_TestCase">
+        <test-method status="PASS" signature="Start()[pri:0, instance:com.TestCases.OrangeHRM_Leave_AssignLeave_TestCase@dbe50f]" name="Start" is-config="true" duration-ms="17822" started-at="2020-06-08T18:36:33Z" finished-at="2020-06-08T18:36:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Start -->
-        <test-method status="PASS" signature="Login()[pri:2, instance:com.TestCases.OrangeHRM_Leave_EmployeeEntitlement_TestCase2@1ba5a14]" name="Login" duration-ms="16209" started-at="2020-06-05T20:15:23Z" finished-at="2020-06-05T20:15:40Z">
+        <test-method status="PASS" signature="Login()[pri:2, instance:com.TestCases.OrangeHRM_Leave_AssignLeave_TestCase@dbe50f]" name="Login" duration-ms="9662" started-at="2020-06-08T18:36:50Z" finished-at="2020-06-08T18:37:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Leave()[pri:0, instance:com.TestCases.OrangeHRM_Leave_EmployeeEntitlement_TestCase2@1ba5a14]" name="Leave" duration-ms="22024" started-at="2020-06-05T20:15:40Z" depends-on-methods="com.TestCases.OrangeHRM_Leave_EmployeeEntitlement_TestCase2.Login" finished-at="2020-06-05T20:16:02Z">
+        <test-method status="PASS" signature="Admin()[pri:0, instance:com.TestCases.OrangeHRM_Leave_AssignLeave_TestCase@dbe50f]" name="Admin" duration-ms="10744" started-at="2020-06-08T18:37:00Z" depends-on-methods="com.TestCases.OrangeHRM_Leave_AssignLeave_TestCase.Login" finished-at="2020-06-08T18:37:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Leave -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.TestCases.OrangeHRM_Leave_EmployeeEntitlement_TestCase2@1ba5a14]" name="teardown" is-config="true" duration-ms="3119" started-at="2020-06-05T20:16:02Z" finished-at="2020-06-05T20:16:05Z">
+        </test-method> <!-- Admin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.TestCases.OrangeHRM_Leave_AssignLeave_TestCase@dbe50f]" name="teardown" is-config="true" duration-ms="2066" started-at="2020-06-08T18:37:11Z" finished-at="2020-06-08T18:37:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.TestCases.OrangeHRM_Leave_EmployeeEntitlement_TestCase2 -->
+      </class> <!-- com.TestCases.OrangeHRM_Leave_AssignLeave_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

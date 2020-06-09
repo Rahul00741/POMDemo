@@ -7,7 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -24,13 +24,13 @@ public class Library {
 	public void launchApp() throws IOException 
 	{
 		
-		FileInputStream fileIS = new FileInputStream("C:\\Users\\user1\\git\\POMDemo\\POMDemo\\src\\test\\resources\\Config Properties\\config.properties"); // configuration property path should be here
+		FileInputStream fileIS = new FileInputStream("C:\\Users\\sai\\git\\POMDemo\\POMDemo\\src\\test\\resources\\Config Properties\\config.properties"); // configuration property path should be here
 		prop = new Properties();
 		prop.load(fileIS);
 		
 		if(prop.getProperty("browser").equalsIgnoreCase("chrome")) 
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\user1\\git\\POMDemo\\POMDemo\\src\\test\\resources\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\sai\\git\\POMDemo\\POMDemo\\src\\test\\resources\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		

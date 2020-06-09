@@ -39,13 +39,10 @@ public class OrangeHRM_Leave_EmployeeEntitlement_TestCase2 extends Library{
 		empentitlement.Leave_Entitlements();
 		empentitlement.Leave_EmpEntitlements();
 		empentitlement.Leave_Employee("Hannah Flores");
-//		Thread.sleep(5000);
-		empentitlement.Leave_DropLeaveType("All");
-//		Thread.sleep(5000);
+		empentitlement.Leave_DropLeaveType("FMLA US");
 		empentitlement.Leave_DropLeavePeriod("2020-01-01 - 2020-12-31");
-		
 		empentitlement.Leave_SearchButton();
-//		Thread.sleep(10000);
+
 		
 	}
 	@AfterClass
