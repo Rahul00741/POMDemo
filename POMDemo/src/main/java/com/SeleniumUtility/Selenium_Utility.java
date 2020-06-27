@@ -15,9 +15,9 @@ import org.testng.Assert;
 public class Selenium_Utility {
 	WebDriver driver;
 
-	public void Selenium_Utitlity(WebDriver ldriver) {
-		driver=ldriver;
-		PageFactory.initElements(ldriver, this);
+	public void Selenium_Utitlity(WebDriver driver) {
+		
+		PageFactory.initElements(driver, this);
 	}
 	
 	public void Selectdrop(WebElement element, String Value) {
@@ -26,12 +26,25 @@ public class Selenium_Utility {
 		dropdown.selectByVisibleText(Value);
 	}
 	
-	public void Take_Screenshot(String path) throws IOException {
-		
-		TakesScreenshot snap=(TakesScreenshot)driver;
-		File src=snap.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyDirectory(src, new File(path));
-		
+//	public void Take_Screenshot(String path) throws IOException {
+//		
+//		TakesScreenshot snap=(TakesScreenshot)driver;
+//		File src=snap.getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyDirectory(src, new File(path));
+//		
+//	}
+	
+	public void snapshot(String fileName)
+	{
+		String	path="C:\\Users\\user1\\git\\POMDemo\\POMDemo\\Screenshot";
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File dest = new File(path+fileName+System.currentTimeMillis()+ ".png");
+		try {
+			FileUtils.copyFile(src, dest);
+			//logger.info("ScreenShot taken in name of "+fileName);
+		} catch (IOException e) {
+			//logger.info("Error in taking ScreenShots");
+		}
 	}
 	
 	public void gettitle() {

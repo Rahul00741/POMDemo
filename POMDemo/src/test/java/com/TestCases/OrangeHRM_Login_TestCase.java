@@ -10,17 +10,19 @@ import org.testng.annotations.Test;
 
 import com.BaseClass.Library;
 import com.Pages.OrangeHRM_Login_Page;
+import com.SeleniumUtility.Selenium_Utility;
 
 public class OrangeHRM_Login_TestCase extends Library{
 	
 	OrangeHRM_Login_Page login;
+	Selenium_Utility selut;
 	
 	@BeforeClass
 	public void Start() throws IOException {
 		launchApp();
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void Login() {
 		login=new OrangeHRM_Login_Page(driver);
 		
@@ -32,7 +34,7 @@ public class OrangeHRM_Login_TestCase extends Library{
 	
 	@AfterClass
 	public void teardown() {
-		to_take_screenshot(prop.getProperty("LoginScreen"));
+		
 		closeApp();
 	}
 
