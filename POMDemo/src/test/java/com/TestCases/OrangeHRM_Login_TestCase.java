@@ -34,7 +34,7 @@ public class OrangeHRM_Login_TestCase extends Library{
 	
 	@AfterClass
 	public void teardown() {
-		
+		//selut.snapshot("LoginPage");
 		closeApp();
 	}
 

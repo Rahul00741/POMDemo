@@ -10,13 +10,13 @@ import com.BaseClass.Library;
 //import com.Pages.OrangeHRM_Admin_Configuration_EmailConfiguration;
 import com.Pages.OrangeHRM_Admin_Configuration_EmailSubscriptions;
 import com.Pages.OrangeHRM_Login_Page;
-import com.SeleniumUtility.SeleniumUtility;
+//import com.SeleniumUtility.SeleniumUtility;
 
 public class OrangeHRM_Admin_Configuration_EmailSubscriptions_TestCase extends Library {
 	
 	OrangeHRM_Login_Page login;
 	OrangeHRM_Admin_Configuration_EmailSubscriptions emailsubscriptions;
-	SeleniumUtility selut = new SeleniumUtility(driver);
+	//SeleniumUtility selut = new SeleniumUtility(driver);
 
 	@BeforeClass
 	public void Start() throws IOException {
@@ -38,7 +38,7 @@ public class OrangeHRM_Admin_Configuration_EmailSubscriptions_TestCase extends L
 		emailsubscriptions.Admin_Configuration();
 		emailsubscriptions.Admin_Configuration_EmailSubscriptions();
 		emailsubscriptions.Admin_Configuration_EmailSubscriptions_Editbtn();
-		emailsubscriptions.EnableEmaiNotiffication();
+		//emailsubscriptions.EnableEmaiNotiffication();
 		emailsubscriptions.Admin_Configuration_EmailSubscriptions_Savebtn();
 		
 	}

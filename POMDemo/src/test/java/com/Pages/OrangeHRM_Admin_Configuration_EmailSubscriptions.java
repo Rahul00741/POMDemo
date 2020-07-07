@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.SeleniumUtility.SeleniumUtility;
+//import com.SeleniumUtility.SeleniumUtility;
+import com.SeleniumUtility.Selenium_Utility;
 
 public class OrangeHRM_Admin_Configuration_EmailSubscriptions
 {
@@ -14,7 +15,7 @@ public class OrangeHRM_Admin_Configuration_EmailSubscriptions
 	 */
 	
 	WebDriver driver;
-	SeleniumUtility selut = new SeleniumUtility(driver);
+	Selenium_Utility selut ;
 	
 	public OrangeHRM_Admin_Configuration_EmailSubscriptions(WebDriver driver)
 	{
@@ -66,11 +67,11 @@ public class OrangeHRM_Admin_Configuration_EmailSubscriptions
 	}
 	
 	//click on check box 
-	public void EnableEmaiNotiffication() throws InterruptedException
-	{
-		selut.checkbox_Checking(Admin_Configuration_EmailSubscriptions_Checkbox1);
-		
-	}
+//	public void EnableEmaiNotiffication() throws InterruptedException
+//	{
+//		selut.checkbox_Checking(Admin_Configuration_EmailSubscriptions_Checkbox1);
+//		
+//	}
 	
 	//Click on Save button
 	public void Admin_Configuration_EmailSubscriptions_Savebtn()

@@ -26,6 +26,12 @@ public class Selenium_Utility {
 		dropdown.selectByVisibleText(Value);
 	}
 	
+	public void SelectdropByIndex(WebElement element, int Index) {
+		
+		Select dropdown=new Select(element);
+		dropdown.selectByIndex(Index);
+	}
+	
 //	public void Take_Screenshot(String path) throws IOException {
 //		
 //		TakesScreenshot snap=(TakesScreenshot)driver;
@@ -36,7 +42,7 @@ public class Selenium_Utility {
 	
 	public void snapshot(String fileName)
 	{
-		String	path="C:\\Users\\user1\\git\\POMDemo\\POMDemo\\Screenshot";
+		String	path="./POMDemo/Screenshot/Screenshot";
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		File dest = new File(path+fileName+System.currentTimeMillis()+ ".png");
 		try {

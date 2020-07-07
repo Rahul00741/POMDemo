@@ -6,15 +6,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.SeleniumUtility.SeleniumUtility;
+import com.SeleniumUtility.Selenium_Utility;
+
+//import com.SeleniumUtility.SeleniumUtility;
 
 
 
 public class OrangeHRM_Admin_Configuration_EmailConfiguration
 {
 	WebDriver driver;
-	SeleniumUtility selut = new SeleniumUtility(driver);
-	
+	//SeleniumUtility selut = new SeleniumUtility(driver);
+	Selenium_Utility selut;
 	public OrangeHRM_Admin_Configuration_EmailConfiguration (WebDriver ldriver)
 	{
 		driver = ldriver;
@@ -59,7 +61,8 @@ public class OrangeHRM_Admin_Configuration_EmailConfiguration
 	
 	public void Admin_Configuration_EmailConfigurationDropDown()
 	{
-		selut.selectDropDownByValue(Admin_Configuration_EmailConfiguration, "Email Configuration");
+		//selut.selectDropDownByValue(Admin_Configuration_EmailConfiguration, "Email Configuration");
+		selut.Selectdrop(Admin_Configuration_EmailConfiguration, "Email Configuration");
 	}
 	//click on EmailConfiguration	
 //	public void Admin_Configuration_EmailConfiguration()
@@ -86,7 +89,8 @@ public class OrangeHRM_Admin_Configuration_EmailConfiguration
 	//Select e-mail sending method frmo drop down Sending method as Sendingmail
 	public void Admin_Configuration_EmailConfiguration_SendingMethodDropDown()
 	{
-		selut.selectDropDownByIndex(Admin_Configuration_EmailConfiguration_SendingMethod, 0);
+		//selut.selectDropDownByIndex(Admin_Configuration_EmailConfiguration_SendingMethod, 0);
+		selut.SelectdropByIndex(Admin_Configuration_EmailConfiguration_SendingMethod, 0);
 	}
 	
 

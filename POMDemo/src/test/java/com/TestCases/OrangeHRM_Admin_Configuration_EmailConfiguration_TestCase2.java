@@ -15,13 +15,13 @@ import com.Pages.OrangeHRM_Admin_Configuration_EmailConfiguration;
 import com.Pages.OrangeHRM_Admin_Page;
 
 import com.Pages.OrangeHRM_Login_Page;
-import com.SeleniumUtility.SeleniumUtility;
+//import com.SeleniumUtility.SeleniumUtility;
 
 public class OrangeHRM_Admin_Configuration_EmailConfiguration_TestCase2 extends Library{
 	
 	OrangeHRM_Login_Page login;
 	OrangeHRM_Admin_Configuration_EmailConfiguration  emailconfiguration;
-	SeleniumUtility selut = new SeleniumUtility(driver);
+	//SeleniumUtility selut = new SeleniumUtility(driver);
 
 	
 
